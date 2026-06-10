@@ -1,5 +1,8 @@
 import React from 'react';
 import { Mail, GraduationCap } from 'lucide-react';
+import teacherImg1 from '../assets/teacher1.jpg';
+import teacherImg2 from '../assets/teacher2.jpg';
+
 
 export default function Teachers() {
   const teachers = [
@@ -9,7 +12,7 @@ export default function Teachers() {
       role: "Head of Computer Science",
       qualification: "Ph.D. in Artificial Intelligence",
       experience: "12+ Years Experience",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80",
+      image: teacherImg1,
     },
     {
       id: 2,
@@ -25,7 +28,7 @@ export default function Teachers() {
       role: "Lead UI/UX Design Mentor",
       qualification: "B.Des from National College of Arts",
       experience: "6+ Years Experience",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80",
+      image: teacherImg2,
     }
   ];
 
