@@ -126,7 +126,7 @@ export default function Contact() {
               {/* Row: Name and Email Split */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Your Name</label>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Your Name</label>
                   <input 
                     type="text" 
                     required
@@ -137,7 +137,7 @@ export default function Contact() {
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Email Address</label>
+                  <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Email Address</label>
                   <input 
                     type="email" 
                     required
@@ -151,26 +151,26 @@ export default function Contact() {
 
               {/* Field: Subject */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Subject Matter</label>
+                <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Contact Number</label>
                 <input 
                   type="text" 
                   required
                   value={formData.subject}
                   onChange={(e) => setFormData({...formData, subject: e.target.value})}
-                  placeholder="Inquiry regarding MERN Stack batch admission" 
+                  placeholder="Enter your contact number" 
                   className="w-full bg-slate-50/80 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:bg-white transition-all text-sm font-medium"
                 />
               </div>
 
               {/* Field: Message */}
               <div>
-                <label className="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Detailed Query Message</label>
+                <label className="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Message</label>
                 <textarea 
                   required
                   rows="5"
                   value={formData.message}
                   onChange={(e) => setFormData({...formData, message: e.target.value})}
-                  placeholder="Describe your application request in detail..." 
+                  placeholder="Describe your request..." 
                   className="w-full bg-slate-50/80 border border-slate-200/80 rounded-xl px-4 py-3.5 text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:bg-white transition-all text-sm font-medium resize-none"
                 />
               </div>
