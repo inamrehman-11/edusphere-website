@@ -1,0 +1,10 @@
+@theme {
+  --animate-fadeIn: fadeIn 0.3s ease-out;
+}
+
+@import "tailwindcss";
+
+/* Smooth scrolling pooray project ke liye */
+html {
+  scroll-behavior: smooth;
+}
